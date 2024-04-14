@@ -1,0 +1,296 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 80px;
+    background-color:rgb(252, 92, 119);
+}
+#bar{
+    display: none;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    margin-inline: 22px;
+    font-size: 20px;
+}
+ul li a:hover{
+    color: aqua;
+    cursor: pointer;
+}
+.logo{
+    font-size: 22px;
+}
+.main{
+    margin-top: 121px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.main img{
+    width:350px;
+    height:450px;
+    border-radius:30px;
+    margin-top: 25px;
+}
+.main p{
+    font-size: 18px;
+    margin-top: 22px;
+}
+.main button{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(237, 86, 171);
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 25px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.mainText{
+    margin-top:64px;
+    margin-inline: 82px;
+    }
+.mainText h1{
+    color: rgb(250, 95, 144);
+}
+    .head{
+        text-align: center;
+        padding: 83px;
+    }
+    .head h1{
+        color: rgb(252, 92, 119);
+        font-size: 40px;
+    }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        }
+    .about img{
+        width: 300px;
+        height: 310px;
+        border-radius:50%;
+        border: 6px solid rgb(84, 224, 240);
+        margin-top: 25px;
+             }
+    .about p{
+        margin-top: 22px;
+        font-size: 20px;
+        }
+        .about h1{
+            font-size: 33px;
+        }
+        .btns{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            gap: 20px;
+            
+        }
+        .btns button{
+            padding: 11px;
+            border: none;
+            margin-inline: 20px;
+            background-color: rgb(241, 106, 129);
+            font-size: 20px;
+            color: white;
+            border-radius: 2px;
+            }
+        .service{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+               }
+        .serviceCard{
+            width: 300px;
+            padding: 22px;
+            background-color: gray;
+            color: white;
+            margin-inline: 20px;
+            margin-top: 20px;
+            text-align: center;
+          }
+        .serviceCard i{
+            font-size: 83px;
+        }
+        .serviceCard p{
+            margin-top: 22px;
+            padding: 15px 0px;
+
+        }
+        .serviceCard h2{
+            margin-top: 22px;
+        }
+        .serviceCard button{
+            width:100px;
+            height:33px;
+            border: none;
+            background-color:  rgb(241, 106, 129);
+            color: white;
+            border-radius: 6px;
+            font-size: 19px;
+        }
+        .work{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .workCard{
+            text-align: center;
+            margin-top: 44px;
+        }
+        .workCard p{
+            flex-wrap: wrap;
+            padding:10px 15px;
+        }
+        .workCard h3{
+            padding: 5px 5px;
+        }
+        .workCard img{
+            width: 600px;
+            border-radius: 5px;
+            margin-inline: 22px;
+        }
+        .workCard a{
+            padding: 5px 22px;
+            background-color: rgb(235, 99, 99);
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top: 11px;
+            border-radius: 10px;
+         }
+         .contact{
+            width: 400px;
+            margin: auto;
+            padding: 22px;
+            background-color: gray;
+            text-align: center;
+             }
+         .contact input{
+            width: 90%;
+            padding: 11px;
+            height: 12px;
+            font-size: 18px;
+            margin-top: 22px;
+
+         }
+         .contact textarea{
+            width: 96%;
+            font-size: 20px;
+            margin-top: 22px;
+              }
+        .contact button{
+            width:100px;
+            height: 33px;
+            background-color: rgb(178, 31, 55);
+            color: white;
+            border: none;
+            margin-top: 22px;
+            font-size: 19px;
+            border-radius: 26px;
+        }
+        .icons{
+            text-align: center;
+            font-size: 32px;
+            margin-top: 22px;
+        }
+        .text{
+            text-align: center;
+        }
+        .footer{
+            padding: 23px;
+
+        }
+        .text p{
+            margin-top: 11px;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width:1100px){
+            .main{
+                display: block;
+                text-align: center;
+            }
+        }
+        
+        @media screen and (max-width:660px){
+            .mainText h1{
+                font-size: 33px;
+            }
+            .main img{
+                width: 90%;
+            }
+            .mainText p{
+                font-size: 14px;
+            }
+            .serviceCard{
+                width: 70%;
+            }
+            .workCard img{
+                width: 80%;
+            }
+            .contact{
+                width: 80%;
+            }
+            nav ul{
+                display: none;
+            }
+            .icon{
+                display: flex;
+                cursor: pointer;
+                font-size: 40px;
+            }
+            #bar{
+                font-size: 30px;
+                display: block;
+            }
+            .showData{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 57px;
+                background-color: rgb(248, 127, 151);
+                color: white;
+                width: 100%;
+                height: 240px;
+                gap: 20px;
+                text-align: center;
+                padding: 0%;
+                cursor: pointer;
+            }
+          
+        }
+        @media screen and (max-width:410px){
+              .about{
+                text-align: center;
+            }
+            .about img{
+                width: 90%;
+                height: 300px;
+            }
+        }
